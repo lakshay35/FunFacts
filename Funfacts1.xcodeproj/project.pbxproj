@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		89E6ED591DA6A348003A5373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6ED581DA6A348003A5373 /* AppDelegate.swift */; };
-		89E6ED5B1DA6A348003A5373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6ED5A1DA6A348003A5373 /* ViewController.swift */; };
 		89E6ED5E1DA6A348003A5373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E6ED5C1DA6A348003A5373 /* Main.storyboard */; };
 		89E6ED601DA6A348003A5373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E6ED5F1DA6A348003A5373 /* Assets.xcassets */; };
 		89E6ED631DA6A348003A5373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E6ED611DA6A348003A5373 /* LaunchScreen.storyboard */; };
+		89E6ED6B1DA6A38B003A5373 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6ED6A1DA6A38B003A5373 /* RootVC.swift */; };
+		89E6ED6D1DA6A4D2003A5373 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6ED6C1DA6A4D2003A5373 /* CellData.swift */; };
+		89E6ED6F1DA6A503003A5373 /* FactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6ED6E1DA6A503003A5373 /* FactTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89E6ED551DA6A348003A5373 /* Funfacts1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funfacts1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E6ED581DA6A348003A5373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89E6ED5A1DA6A348003A5373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89E6ED5D1DA6A348003A5373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89E6ED5F1DA6A348003A5373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89E6ED621DA6A348003A5373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89E6ED641DA6A348003A5373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E6ED6A1DA6A38B003A5373 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootVC.swift; path = ../RootVC.swift; sourceTree = "<group>"; };
+		89E6ED6C1DA6A4D2003A5373 /* CellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
+		89E6ED6E1DA6A503003A5373 /* FactTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 		89E6ED571DA6A348003A5373 /* Funfacts1 */ = {
 			isa = PBXGroup;
 			children = (
+				89E6ED6A1DA6A38B003A5373 /* RootVC.swift */,
+				89E6ED6E1DA6A503003A5373 /* FactTVC.swift */,
 				89E6ED581DA6A348003A5373 /* AppDelegate.swift */,
-				89E6ED5A1DA6A348003A5373 /* ViewController.swift */,
 				89E6ED5C1DA6A348003A5373 /* Main.storyboard */,
+				89E6ED6C1DA6A4D2003A5373 /* CellData.swift */,
 				89E6ED5F1DA6A348003A5373 /* Assets.xcassets */,
 				89E6ED611DA6A348003A5373 /* LaunchScreen.storyboard */,
 				89E6ED641DA6A348003A5373 /* Info.plist */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E6ED5B1DA6A348003A5373 /* ViewController.swift in Sources */,
+				89E6ED6B1DA6A38B003A5373 /* RootVC.swift in Sources */,
 				89E6ED591DA6A348003A5373 /* AppDelegate.swift in Sources */,
+				89E6ED6D1DA6A4D2003A5373 /* CellData.swift in Sources */,
+				89E6ED6F1DA6A503003A5373 /* FactTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +308,7 @@
 				89E6ED691DA6A348003A5373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
