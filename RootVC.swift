@@ -10,10 +10,10 @@ import UIKit
 
 class RootVC: UITableViewController {
 
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            self.tableView.contentInset.top = 20;
+            //self.navigationController?.navigationBar.isHidden = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,12 +40,10 @@ class RootVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? FactTVC
-        cell?.imageCell.image = UIImage(contentsOfFile: CellData.getImage(number: indexPath.row))
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellData.getTitle(number: indexPath.row), for: indexPath) as? FactTVC
+        //cell?.imageCell.image = UIImage(contentsOfFile: CellData.getImage(number: indexPath.row))
         cell?.labelCell.text = CellData.getTitle(number: indexPath.row)
         print(CellData.getTitle(number: indexPath.row))
-        
-        
         return cell!
     }
  
@@ -94,5 +92,9 @@ class RootVC: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return ((self.view.bounds.height - 20) / 6)
+    }
 
 }
