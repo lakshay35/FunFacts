@@ -83,18 +83,38 @@ class RootVC: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? FactsVC {
+            /* case "Animals":
+                
+            case "League of Legends":
+                */
+            if (segue.identifier == "Numbers") {
+                destinationVC.url = NSURL(string: "http://numbersapi.com/random/trivia")
+            }
+            /*
+            case "Humans":
+                
+            case "UGA":
+                
+            case "Ketosis":
+                
+                break
+            case "Numbers":
+                break*/
+            
+        }
     }
-    */
+    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return ((self.view.bounds.height - 20) / 6)
+        return ((self.view.bounds.height - 80) / 6)
     }
 
 }
